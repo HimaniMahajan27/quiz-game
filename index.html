@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head">
+        <h id="h"> quiz game</h>
+    </div>
+    <div class="container">
+        <button class="box1">start</button>
+        <p id="hurryup"> *Timer Will Start After Clicking Start*</p>
+    </div>
+    <div class="box2 hide1">
+        <h id="h2">following are the instruction:</h><br>
+        <ul class="inst">
+            <li> read the question carefully.</li>
+            <li> choose the correct option </li>
+            <li>scoring:<br>
+                correct answer: 1points<br>
+                incorrect answer: 0points</li>
+            <li>each question has one correct answer</li>
+            <li> you will get 30 sec to answer each question</li>
+            <li> there are 10 question which need to be solved within 15 mins</li>
+        </ul>
+    </div>
+    <div class="box3 hide2">
+        <button id="h3">let's begin</button>
+    </div>
+
+    <div class="countdown hide3">
+        <div id="time">
+            <span id="minutes"></span> Mins
+            <span id="seconds"></span> Secs
+        </div>
+    </div>
+    <div class="q1 hide4">question 1: What is the capital city of Australia?<br><br> </div>
+    <div class="container2 hide5">
+        <div class="q3" id="incorrect1">A) Sydney</div>
+        <div class="q3" id="incorrect2">B) Melbourne</div>
+        <div class="q3" id="correct1">C) Canberra</div>
+        <div class="q3" id="incorrect3">d) Brisbane</div>
+    </div>
+    <div class="message hide6"> correct</div>
+
+    <div class="q2 hide7">question 2: What is the largest planet in our solar system?<br><br> </div>
+    <div class="container3 hide8">
+        <div class="q4" id="incorrect4">A)Earth</div>
+        <div class="q4" id="incorrect5">B)Mars</div>
+        <div class="q4" id="incorrect6">C)Saturn</div>
+        <div class="q4" id="correct2">d)Jupitor</div>
+    </div>
+    <div class="message1 hide9"> correct</div>
+
+    <div class="q7 hide13">question 3: What is the main language spoken in Brazil?<br><br> </div>
+    <div class="container5 hide14">
+        <div class="q8" id="incorrect10">A)Spanish</div>
+        <div class="q8" id="correct4">B)Portuguese</div>
+        <div class="q8" id="incorrect11">C)French</div>
+        <div class="q8" id="incorrect12">d)English</div>
+    </div>
+    <div class="message3 hide15"> correct</div>
+
+    <div class="q9 hide16">question 4: Who is known as the father of computers?<br><br> </div>
+    <div class="container6 hide17">
+        <div class="q10" id="correct5">A)Charles Babbage</div>
+        <div class="q10" id="incorrect13">B)Alan Turing</div>
+        <div class="q10" id="incorrect14">C)Thomas Edison</div>
+        <div class="q10" id="incorrect15">d)Alexander Graham Bell</div>
+    </div>
+    <div class="message4 hide18"> correct</div>
+
+    <div class="q11 hide19">question 5:Which organ in the human body is primarily responsible for pumping blood?<br><br>
+    </div>
+    <div class="container7 hide20">
+        <div class="q12" id="incorrect16">A)Brain</div>
+        <div class="q12" id="incorrect17">B)Liver</div>
+        <div class="q12" id="correct6">C)Heart</div>
+        <div class="q12" id="incorrect18">d)Kidney</div>
+
+    </div>
+    <div class="message5 hide21"> correct</div>
+
+    <div class="q13 hide22">question 6:What is the hardest rock?<br><br> </div>
+    <div class="container8 hide23">
+        <div class="q14" id="incorrect19">A)Granite</div>
+        <div class="q14" id="incorrect20">B)Marble</div>
+        <div class="q14" id="correct7">C)Diamond</div>
+        <div class="q14" id="incorrect21">d)Quartz</div>
+    </div>
+    <div class="message6 hide24"> correct</div>
+
+    <div class="q15 hide25">question 7:What is the largest ocean on Earth?<br><br> </div>
+    <div class="container9 hide26">
+        <div class="q16" id="incorrect22">A)Atlantic ocean</div>
+        <div class="q16" id="incorrect23">B)Indian ocean</div>
+        <div class="q16" id="incorrect24">C)Arctic ocean</div>
+        <div class="q16" id="correct8">d)Pacific ocean</div>
+    </div>
+    <div class="message7 hide27"> correct</div>
+
+    <div class="q17 hide28">question 8:What is the largest desert in the world?<br><br> </div>
+    <div class="container10 hide29">
+        <div class="q18" id="incorrect25">A)Sahara desert</div>
+        <div class="q18" id="incorrect26">B)Arabian desert</div>
+        <div class="q18" id="incorrect27">C)Gobi desert</div>
+        <div class="q18" id="correct9">d)Antarctic desert</div>
+    </div>
+    <div class="message8 hide30"> correct</div>
+
+    <div class="q19 hide31">question 9:Which is the smallest continent by land area?<br><br> </div>
+    <div class="container11 hide32">
+        <div class="q20" id="incorrect28">A)Europe</div>
+        <div class="q20" id="correct10">B)Australia</div>
+        <div class="q20" id="incorrect29">C)South America</div>
+        <div class="q20" id="incorrect30">d)Antarctica</div>
+    </div>
+    <div class="message9 hide33"> correct</div>
+
+    <div class="q21 hide34">question 10:What is the hardest part of the human body?<br><br> </div>
+    <div class="container12 hide35">
+        <div class="q22" id="incorrect31">A)Skull</div>
+        <div class="q22" id="incorrect32">B)Femur</div>
+        <div class="q22" id="correct11">C)Tooth Enamel</div>
+        <div class="q22" id="incorrect33">d)Spine</div>
+    </div>
+    <div class="message10 hide36">correct</div>
+
+    <button class="finish hide99">Finish</button>
+
+    <div class="result hide37">
+        <p id="emoji1"> 🔅🔅🔅🔅🔅🔅</p>
+        <p id="line"> Your Result Is:</p>
+        <div class="ways">
+            <div class="right">
+                <p id="display">0</p>
+                <p id="jio"> correct</p>
+            </div>
+        </div>
+        <div class="pass1">
+            <p class="displa2">you are pass</p><br>
+            <p id="emoji"> 🔅🔅🔅🔅🔅🔅</p>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
